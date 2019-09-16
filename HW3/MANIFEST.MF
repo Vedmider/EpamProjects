@@ -1,3 +1,3 @@
 Manifest-Version: 1.0                                                                                                                                                                  
-Class-Path: .                                                                                                                                                                          
+Class-Path: junit-4.12.jar                                                                                                                                                                          
 Main-Class: com.application.HelloWorld
