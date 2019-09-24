@@ -8,14 +8,14 @@ public class ByteToInt {
         int[] intArray = new int[charsArrayLength];
         int decimal = 0;
 
-        for (int i = 0; i < charsArrayLength; i++){
+        for (int i = 0; i < charsArrayLength; i++) {
             intArray[i] = Character.getNumericValue(charsArray[i]);
         }
 
-        for (int i = 0; i < charsArrayLength; i++){
-            decimal += intArray[charsArrayLength - 1 - i]*power(2, i);
+        for (int i = 0; i < charsArrayLength; i++) {
+            decimal += intArray[charsArrayLength - 1 - i] * power(2, i);
         }
-        System.out.println("input variable - " + args[0] + ", output decimal - " +  decimal);
+        System.out.println("input variable - " + args[0] + ", output decimal - " + decimal);
         // next challenge
         int a = 4;
         a = ~a;
@@ -23,10 +23,10 @@ public class ByteToInt {
         System.out.println(a);
     }
 
-    static int power(int a, int b){
+    static int power(int a, int b) {
         int result = 1;
-        for (int i=1; i<=b; i++){
-            result = result*a;
+        for (int i = 1; i <= b; i++) {
+            result = result * a;
         }
         return result;
     }
